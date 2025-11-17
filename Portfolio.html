@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = 'fr'>
+    <head>
+        <link rel="stylesheet" href="Portfolio.css">
+    </head>
+    <body>
+        <header>
+            <h1>KPONTON <span>Ahéba Rosita-Carole Ashley</span></h1>
+            <nav>
+                <ul>
+                <li><a href="#acc"><span>Accueil</span></a></li>
+                <li><a href="#pro">À propos</a></li>
+                <li><a href="#proj">Projets</a></li>
+                <li><a href="#comp">Compétences</a></li>
+                <li><a href="#call">Contact</a></li>
+                                
+            </ul>
+            </nav>
+        </header>
+        <section class="un" id="acc">
+            <div>
+                <p>Je suis <span>Carole</span>, Développeuse en devenir passionnée par le Web et le design !</p>
+                <button><a href="#proj">Voir mes projets</a></button>
+            </div>
+            <div1>
+                <img src="image.png" alt="image du portfolio" width="650" height="400">
+            </div1>
+        </section>
+        <section class="deux">
+            <h2 class="titre1" id="pro"><span>À propos</span></h2>           
+            <div class="propos">
+                <div2>
+                <p>Je m'appelle <span>KPONTON</span>, passionnée par la création de sites web modernes et interactifs</p>
+                <p>Je suis actuellement étudiante en <span>développement web</span>, et je cherche à améliorer mes compétences en Javascript, HTML et CSS.</p>
+                <p>J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+                <button><a href="CV.pdf" target="_blank">Télécharger mon CV</a></button>
+                </div2>
+                <div3>
+                <img src="image2.jpg" class="photo" alt="profil" width="280" height="280">
+                </div3>
+            </div>
+        </section>
+        <section class="trois">
+            <h2 class="titre2" id="proj"><span>Mes projets</span></h2>
+            <div class="cartes">
+                <div class="carte">
+                    <p>Un site web dédié à la médécine</p>
+                    <p>#html,#css,#js</p>
+                    <button><a href="bientot.jpg">Voir</a></button>
+                </div>
+                <div class="carte">
+                    <p>Un site web dédié à la médécine</p>
+                    <p>#html,#css,#js</p>
+                    <button><a href="bientot.jpg">Voir</a></button>
+                </div>
+                <div class="carte">
+                    <p>Un site web dédié à la médécine</p>
+                    <p>#html,#css,#js</p>
+                    <button><a href="bientot.jpg">Voir</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="quatre">
+            <h2 class="titre3" id="comp">Mes compétences</h2>
+            <div class="skills">
+                <img class="barre" src="image3.jpg" alt="soft skills">
+                <img class="barre" src="image4.jpg" alt="hard skills">
+            </div>
+        </section>
+        <section class="cinq" id="call">
+            <div class="entete">
+                <h2 class="titre4">Vous avez un <span>projet en tête ?</span></h2>
+                <p class="titre5">N'hésitez pas à me <span>contacter</span></p>
+            </div>
+            <div class="identite">
+                 <form onsubmit="envoyerFormulaire(event)">
+                <div class="popo">
+                    <input type="text" id="prenom" placeholder="Votre prénom" required>
+                    <input type="text" id="nom" placeholder="Votre nom" required>
+                </div>
+                <input type="text" id="sujet" placeholder="Votre sujet" required>
+                <textarea id="message" rows="10" placeholder="Écrivez votre message ici..." required></textarea>
+                <button type="submit">Envoyer</button>
+                </form>
+            </div>
+
+  <script>
+    function envoyerFormulaire(e) {
+      e.preventDefault();
+
+      const prenom = document.getElementById('prenom').value;
+      const nom = document.getElementById('nom').value;
+      const sujet = document.getElementById('sujet').value;
+      const message = document.getElementById('message').value;
+
+      console.log("Formulaire envoyé !");
+      console.log("Prénom :", prenom);
+      console.log("Nom :", nom);
+      console.log("Sujet :", sujet);
+      console.log("Message :", message);
+
+      alert("Merci " + prenom + ", votre message a été envoyé !");
+    }
+  </script>
+</section>
+<footer>
+    <p>Design by <span>Carole</span> with HTML CSS JSS</p>
+    <p>Tous droits réservés - 2025</p>
+</footer>
+    </body>
+</html>
